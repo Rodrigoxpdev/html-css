@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+
+
+/* CORPO DA PAGINA */
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+/* CARREGANDO FONTES SALVAS NO PC */
+@font-face {
+    font-family: idroid;
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+header > h1{
+    font-family: idroid, sans-serif;
+
+}
+header > p{
+    font-size: 20px;
+}
+
+
+
+
+/* card principal de fora */
+.card1{
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.323);
+    /* border: 1px solid black; */
+    height: 300px;
+    max-width: 50%;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 1em;
+
+
+}
+
+/* card de dentro */
+.card2{
+    background-color:#045b62;
+    /* border: 1px solid black; */
+    max-width: 100%;
+    height: 40px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* titulo do card 2 */
+#rs{
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'idroid', sans-serif;
+    
+    
+
+}
+
+/* paragrafo do card2 */
+#pl{
+    text-align: center;
+    font-family: idroid, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    background-color: gray;
+    padding: 5px;
+    margin-top: 0px;
+    
+}
+
+.pl3{
+    text-align: center;
+    margin: auto;
+    
+
+}
+
+
+/* usuario */
+#usuario{
+    border-radius: 7px;
+}
+
+
+/* senha */
+#senha{
+    border-radius: 7px;
+    margin-left: 5px;
+}
+
+
+
+/* checkbox */
+#checkbox{
+    
+}
+
+
+/* botão */
+#btn{
+    border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

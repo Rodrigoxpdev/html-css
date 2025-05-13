@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+
+    <!-- # = id
+    . = class
+    : = pseudo-class
+    : = pseudo-element
+    > = clildren, basicamente é o filho-->
+
+
+    <!-- estilo css  -->
+    <style> 
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        /* cor do link, o link é representado pela letra 'a' */
+        a{
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+       /* cor do site visitado */
+       a:visited{
+        color: rgb(20, 119, 119);
+       }
+
+       /* quando passar a seta sobre o texto muda a cor */
+       a:hover{
+        color: rgb(0, 0, 0);
+        text-decoration: underline; /*decoraçao em linha*/
+       }
+
+       /* quando o for clicado o efeito acontece ou quando precionar */
+       a:active{
+        color: blueviolet;
+       }
+
+       /* before  = antes do elemento */
+       a::before{
+        content:'☰ ';
+        text-decoration: none;
+        font-weight: normal;
+        color: rgb(33, 236, 236);
+       } 
+
+       /* after  = depois do elemento */
+       a::after{
+        content: ' ☰ ';
+        text-decoration: none;
+        font-weight: normal;
+        color: rgb(33, 236, 236);
+       }
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <!-- Título principal -->
+    <h1>Personalizando Links</h1>
+
+
+
+
+    <ul>
+        <!-- tiktok -->
+        <li><a href="https://www.tiktok.com/@patraoxp.94?_t=ZM-8wEBdXFT7eH&_r=1"  target="_blank">Tiktok</a></li>
+
+        <!-- youtube -->
+        <li><a href="https://youtube.com/@patraoxp.94?si=P-4oQ_9KWYA3_wAJ" target="_blank">Youtube</a></li>
+        
+    </ul>
+
+
+</body>
+</html>

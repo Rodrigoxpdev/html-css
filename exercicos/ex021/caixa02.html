@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+<!-- --------------------------------- -->
+ <!-- as tags div, spam 
+  <div></div>, <span></span> -->
+<!-- --------------------------------- -->
+
+<style>
+
+    /* corpo  */
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: grey;
+        margin: 0px;
+    }
+
+
+    /*cabeçalho do site */
+    header { 
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        margin: 10px;
+    }
+
+
+    /*navegaçao = links*/
+    nav{ 
+        background-color:rgb(144, 144, 144) ;
+        padding: 3px;
+        color: aliceblue;
+
+        /* sombra da caixa */
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.233);
+    }
+
+
+
+    nav > a{
+        padding: 3px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        padding-right: 30px;
+    }
+
+
+    /*conteudo principal*/
+    main { 
+        
+        background-color: white;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 4px 4px 9px 0px black;
+    }
+
+    
+    article{
+        background-color: lightgray;
+        padding: 5px;
+
+    }
+
+    article > aside{
+        background-color: rgb(159, 159, 159);
+    }
+
+
+    /*rodape do site*/
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 4px;
+        margin: 0px;
+
+    } 
+
+    footer > p {
+        margin: 0px;
+
+    }
+    header > h1{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    
+
+</style>
+  </head>  <!--head = cabeça do site -->
+<body>
+    
+    <header>
+       <h1>RD PLAY </h1>
+
+       <nav>
+        <a href="#"></a>Link 1
+        <a href="#"></a>Link 2
+        <a href="#"></a>Link 3
+        <a href="#"></a>Link 4
+        </nav>
+    </header>
+     <main> <!--conteudo da pagina -->
+        <!-- ------------------------------------------------------ -->
+        <section id="assuntos">
+            <p>Sportes Brasileiros</p>
+
+        </section>
+
+        <!-- ------------------------------------------------------ -->
+
+        <section id="noticias" >
+            <article> <!--artigo 1-->
+        
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptas iusto quasi labore nulla dicta ipsum voluptatibus distinctio aliquid dolorum blanditiis qui, reiciendis obcaecati natus rerum maxime voluptatem sequi porro.</p>
+
+            </article>
+
+            <article> <!--artigo 2-->
+            <aside>  <!--filho do artigo-->
+            <p>Artigo escrito pelo RSDEV</p>
+
+            </aside>
+        </article>
+        </section>
+
+
+
+        
+    </main>
+    <footer>
+        <p>Desemvolvido pelo RSDEV</p>
+    </footer>
+
+   
+
+
+
+
+</body>
+</html>

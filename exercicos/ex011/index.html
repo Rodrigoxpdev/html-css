@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias</title>
+</head>
+<body>
+    
+    <!-- AREAS DE IMAGENS -->
+
+    <h1>imagens dinamicas </h1>
+        <p>tente abrir essas imagens em varios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do navegador</p>
+
+        <picture>
+            <source media="(min-width: 750px)" srcset="imagens/cllr.png" type="image/png">
+            
+            <source media="(min-width: 1050px)" srcset="imagens/tablet.png" type="image/png">
+            <img src="imagens/notebook.png" alt="flexivel">
+            
+        </picture>
+<!-- --------------------------------------------------------- -->
+
+
+
+        <h1>Reproduzindo Áudio</h1>
+        <p>vamos aprender a reproduzir em html5</p>
+        <!-- <audio  src="midia/audio 1.mp3" ></audio> -->
+
+
+        <!-- loop = fica repetindo em forma de loop
+         autoplay para reproduzir automaticamente -->
+
+        <audio preload="auto" controls >
+            <!--mpeg = mp3-->
+            <source src="midia/audio 1.mp3" type="audio/mpeg" > 
+
+            <!--ogg --> 
+            <source src="midia/audio 1.ogg" type="audio/ogg" >
+
+            <!--wav = maior qualidade-->
+            <source src="midia/audio 1.wav" type="audio/wav" >
+            <p>infelizmente seu navegador não consegue abrir o arquivo. <a href="midia/audio 1.mp3">Clique aqui para baixar o arquivo</a></p>
+        </audio>
+
+        <h1>Reproduzindo videos</h1>
+
+
+</body>
+</html>
