@@ -1,0 +1,110 @@
+ @charset "UTF-8";  /* USADO PARA NAO TER PROBLEMAS COM ACENTUAÇAO */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgrey;
+
+}
+
+
+
+
+/* -- ----------------------------------------------------------------------- -- */
+
+/* HEADER TOPO DA PAGINA */
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* titulo do topo */
+header > h1 {
+    padding: 50px;
+    font-variant: small-caps; /*AS PRIMEIRAS LETRAS EM MAIUSCULO*/
+
+}
+
+/* paragrafo do topo */
+header > p {
+    padding-bottom: 50px;
+
+}
+/* -- ----------------------------------------------------------------------- -- */
+
+
+
+/* LINKS HEADER E FOOTER */
+
+/* configuração do link do topo */
+/* 'header a, footer a'  links sobre, topo e rodapé*/
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* quando passar o mouse por cima do link  */
+/* 'header a:hover, footer a:hover'  links sobre, topo e rodapé*/
+header a:hover, footer a:hover { 
+    text-decoration: underline; /* Decoração do texto em linha */
+    color: blue;
+
+}
+
+/* -- ----------------------------------------------------------------------- -- */
+
+/* Sessão geral */
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+section.normal {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    
+}
+
+
+section.imagem {
+    color: white;
+    background-color: gray;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.463);
+    width: 400px;
+
+}
+
+
+
+/* -- ----------------------------------------------------------------------- -- */
+
+
+
+
+
+
+
+/* -- ----------------------------------------------------------------------- -- */
+/* rodapé do site */
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+
