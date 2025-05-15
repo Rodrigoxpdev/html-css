@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+
+        /* CONTEINER OBS DE FORA POSIÇAO RELATIVA */
+        #container {
+            
+            position: relative; /* POSICIONAMENTO RELATIVO */
+            width: 100%; /*LARGURA*/
+            height: 96vh; /* VAI USA 96% DA VIWPORT, 'CORPO DA PAGINA' */
+            padding: 10px; /*MARGEM INTERNA*/
+            background-color: #720606; /*COR DO CONTEUDO*/
+            background-image: url(imagens/target001.png); /*IMAGEM DE FUNDO*/
+            background-size: 100% 100%; /*FAZ USAR 100% DA IMAGEM*/
+            
+        }
+
+        /* CONTEUDO OBS DE DENTRO POSIÇAO ABSOLUTA  */
+        #conteudo{
+            position: absolute; /* POSICIONAMENTO ABSOLUTO */
+            width: 400px; /*LARGURA*/
+            height: 200px; /*ALTURA */
+            background-color: #06ff40; /*COR DO CONTEUDO*/
+            background-image: url(imagens/target001.png); /*IMAGEM DE FUNDO*/
+            background-size: 100% 100%; /*FAZ USAR 100% DA IMAGEM*/
+            transform: translate(-50%, -50%);/*TRANSFORMAÇÃO PARA MUDAR O POSICIONAMENTO*/
+
+            /* POSISSIONAMENTO  PODE USAR -50 -50 PARA FAZER O INVERSO*/
+            top: 50%;
+            left: 50%; 
+        }
+        @media (main-width: 350px) {
+            #conteudo{
+                background-color: #720606; /*COR DO CONTEUDO*/
+                background-image: url(imagens/target001.png); /*IMAGEM DE FUNDO*/
+                background-size: 100% 100%; /*FAZ USAR 100% DA IMAGEM*/
+            }
+        }
+
+
+    </style>
+
+</head>
+<body> <!-- CORPO DA PAGINA -->
+    
+    <!-- POSICIONAMENTO RELATIVO -->
+     <section id="container">  <!--VAI SER A CAIXA DO CONTEUDO -->
+        <article id="conteudo"> <!-- POSICIONAMENTO ABSOLUTO -->
+
+        </article>
+    </section>
+
+
+
+    
+</body>
+</html>
