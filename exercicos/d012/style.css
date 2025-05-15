@@ -1,14 +1,47 @@
  @charset "UTF-8";  /* USADO PARA NAO TER PROBLEMAS COM ACENTUAÇAO */
 
+/* -- ----------------------------------------------------------------------- -- */
+/* CFG GERAL  */
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
+
+/* -- ----------------------------------------------------------------------- -- */
+/* FONTE 01  */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Share+Tech&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.sriracha-regular {
+  font-family: "Sriracha", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.share-tech-regular {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root{
+    --font01:  Verdana, Geneva, Tahoma, sans-serif;
+    --font02: "Share Tech", sans-serif;
+    --font03: "Sriracha", cursive;
+
+}
+
+
+/* -- ----------------------------------------------------------------------- -- */
 html, body{
     min-height: 100vh;
     background-color: darkgrey;
-
+    font-family: var(--font01);
 }
 
 
@@ -21,14 +54,16 @@ html, body{
 header {
     background-color: black;
     color: white;
-    text-align: center;
+    text-align: center;   
 }
 
 /* titulo do topo */
 header > h1 {
     padding: 50px;
     font-variant: small-caps; /*AS PRIMEIRAS LETRAS EM MAIUSCULO*/
-
+    font-family: var(--font02);
+    font-size: 10vh;
+    
 }
 
 /* paragrafo do topo */
@@ -66,24 +101,22 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-family: var(--font03);
+    font-size: 3.5vh;
 }
-
 section.normal {
     background-color: rgb(255, 255, 255);
     color: black;
     
 }
-
-
 section.imagem {
     color: white;
     background-color: gray;
 }
-
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.463);
-    width: 400px;
-
+    /* width: 400px; */
+    display: inline-block;
 }
 
 
