@@ -17,6 +17,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         /* DADOS E TITULO */
@@ -33,10 +34,26 @@
             background-color: lightgray;
         }
 
+
         /* CABEÇALHO E RODAPÉ */
         thead, tfoot {
             background-color: gray;
         }
+
+        /* FAZENDO O CABEÇALHO COLAR NO TOPO */
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+
+        /* nth-child, efeito zebrado emtre linhas */
+        tbody > tr:nth-child(2n) { /* 2n-1.. odd / even*/
+            background-color: rgba(138, 138, 138, 0.24);
+        }
+
+
 
         .num{
             text-align: right;
@@ -67,8 +84,11 @@
         <caption>População das unidades federativas</caption>
         <thead> <!-- CABEÇALHO  -->
             <tr  > <!-- LINHA  -->
-                <th  >Estado</th> <!-- TITULO  -->
-                <th  >População</th> <!-- TITULO  -->
+                
+                <!-- TITULO  -->
+                <th scope="col" >Estado</th> 
+                <!-- TITULO  -->
+                <th scope="col" style="width: 100px;">População </th> 
 
             </tr>
         </thead>
@@ -189,12 +209,12 @@
 
         <!-- ---------------------------------------------------- -->
         <tfoot><!-- RODAPÉ  -->
-            <th>Total de Habitantes</th>
+        <tr>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"><strong>210 147 125</strong></td>
+        </tr>
         </tfoot>
-   </table>
-
-
+   </table          
 
 
 
