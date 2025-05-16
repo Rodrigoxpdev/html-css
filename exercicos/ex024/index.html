@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS</title>
+
+    <!-- ESTILO  CSS INTERNO -->
+     <style>
+         /* CORPO */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+
+        /* TABELA */
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        /* DADOS E TITULO */
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        /* CABEÇALHO E RODAPÉ */
+        thead, tfoot {
+            background-color: gray;
+        }
+
+        .num{
+            text-align: right;
+        }
+
+     </style>
+
+</head>
+<body>
+
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES 
+        TABLE 
+
+        THEAD = CABEÇALHO
+        TR TD TH
+            
+        TBODY = CORPO
+        TR TD TH
+
+        TFOOT = RODAPÉ 
+        TR TD TH 
+    -->
+        
+    <table> <!-- TEBELA  -->
+        <thead> <!-- CABEÇALHO  -->
+            <tr  > <!-- LINHA  -->
+                <th  >Estado</th> <!-- TITULO  -->
+                <th  >População</th> <!-- TITULO  -->
+
+            </tr>
+        </thead>
+        <tbody><!-- CORPO  -->
+            <tr> <!-- LINHA 1 -->
+                <td> São Paulo </td> <!-- DADOS  -->
+                <td class="num"> 45 919 049 </td>
+            </tr>
+            <tr>
+                <td> Minas Gerais </td> <!-- DADOS  -->
+                <td class="num"> 21 168 791 </td>
+            </tr>
+            <tr>
+                <td> Rio de janeiro </td><!-- DADOS  -->
+                <td class="num"> 17 219 679 </td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num"> 17 219 679 </td><!-- DADOS  -->
+            </tr>
+            <tr>
+                <td >Bahia</td><!-- DADOS  -->
+                <td class="num"> 14 850 513</td>
+            </tr>
+            <tr>
+                <td>Paraná</td><!-- DADOS  -->
+                <td class="num">11 824 665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td><!-- DADOS  -->
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td> Pernambuco </td><!-- DADOS  -->
+                <td class="num"> 9 539 029	 </td>
+            </tr>
+            <tr>
+                <td> Ceará </td><!-- DADOS  -->
+                <td class="num"> 9 233 656 </td>
+            </tr>
+            <tr>
+                <td> Pará </td><!-- DADOS  -->
+                <td class="num"> 8 664 306 </td>
+            </tr>
+            <tr>
+                <td> Santa Catarina </td><!-- DADOS  -->
+                <td class="num"> 8 058 441 </td>
+            </tr>
+            <tr>
+                <td> Goiás </td><!-- DADOS  -->
+                <td class="num"> 7 350 483</td>
+            </tr>
+            <tr>
+                <td> Maranhão </td><!-- DADOS  -->
+                <td class="num"> 7 010 960	 </td>
+            </tr>
+            <tr>
+                <td> Amazonas </td><!-- DADOS  -->
+                <td class="num"> 4 281 209</td>
+            </tr>
+            <tr>
+                <td> Paraíba </td><!-- DADOS  -->
+                <td class="num"> 4 145 040 </td>
+            </tr>
+            <tr>
+                <td> Espírito Santo </td><!-- DADOS  -->
+                <td class="num"> 4 102 129 </td>
+            </tr>
+            <tr>
+                <td> Mato Grosso </td><!-- DADOS  -->
+                <td class="num"> 3 836 399	 </td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Norte </td><!-- DADOS  -->
+                <td class="num"> 3 446 071 </td>
+            </tr>
+            <tr>
+                <td> Piauí </td><!-- DADOS  -->
+                <td class="num"> 3 375 646 </td>
+            </tr>
+            <tr>
+                <td> Alagoas </td><!-- DADOS  -->
+                <td class="num"> 3 220 104 </td>
+            </tr>
+            <tr>
+                <td> Distrito Federal </td><!-- DADOS  -->
+                <td class="num"> 2 982 818 </td>
+            </tr>
+            <tr>
+                <td> Mato Grosso do Sul </td><!-- DADOS  -->
+                <td class="num"> 2 901 895 </td>
+            </tr>
+            <tr>
+                <td> Sergipe </td><!-- DADOS  -->
+                <td class="num"> 2 291 077 </td>
+            </tr>
+            <tr>
+                <td> Rondônia </td><!-- DADOS  -->
+                <td class="num"> 1 746 227 </td>
+            </tr>
+            <tr>
+                <td> Tocantins </td><!-- DADOS  -->
+                <td class="num"> 1 577 342 </td>
+            </tr>
+            <tr>
+                <td> Acre </td><!-- DADOS  -->
+                <td class="num"> 880 631 </td>
+            </tr>
+            <tr>
+                <td> Amapá </td><!-- DADOS  -->
+                <td class="num"> 802 837 </td>
+            </tr>
+            <tr>
+                <td> Rondônia </td><!-- DADOS  -->
+                <td class="num"> 1 746 227 </td>
+            </tr>
+        </tbody>
+        <tfoot><!-- RODAPÉ  -->
+            <th>Total de Habitantes</th>
+            <td class="num"><strong>210 147 125</strong></td>
+        </tfoot>
+   </table>
+
+
+
+
+
+
+</body>
+</html>
