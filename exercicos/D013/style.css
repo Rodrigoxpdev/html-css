@@ -10,20 +10,13 @@ table{
     border-collapse: collapse;
     border: 1px solid black;
     text-align: center;
-    align-items:center;
-    
-    
+    align-items:center;  
 }
 
 
 td{
     border: 1px solid black;
-    padding: 20px;
-    
-
-    
-    
-    
+    padding: 20px;   
 }
 
 th{
@@ -31,10 +24,8 @@ th{
     padding: 20px;
     font-size: 1.2em;
     text-align: center;
-    text-align: center;
-   
+    text-align: center; 
 }
-
 
 /* COR E ALINHAMENTO SEPARADOS */
 .grey{
@@ -48,12 +39,11 @@ th{
 
 .grey2{
     background-color: gray;
-     color: white;
-     
+     color: white;   
 }
 
 
-
+/* ------------------------------------------ */
 
 
 

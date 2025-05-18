@@ -1,21 +1,46 @@
 @charset "UTF-8";
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    width: 500px;
+    border-collapse: collapse;
+}
+
+caption{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 8px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* .destaque{
+    background-color: chartreuse;
+} */
 
 
+/* colocando cor em um grupo de nomes  */
+col.cnome {
+    background-color: chartreuse;
+}
 
+col.colgroup{
+    background-color: aqua ;
+}
 
+/* col.csexo {
+    background-color: yellow;
+} */
 
-
-
-
-
-
-
-
-
-
-
-
+col.cprof{
+    background-color: blueviolet;
+}
 
 
 
